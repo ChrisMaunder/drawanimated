@@ -2,9 +2,6 @@
 
 Shows how to use the DrawAnimatedRects function to improve the look of your apps.
 
-- [Download demo project 1 - 17.3 Kb](https://raw.githubusercontent.com/ChrisMaunder/drawanimated/master/docs/assets/DrawAnimated_demo1.zip)
-- [Download demo project 2 - 16.4 Kb](https://raw.githubusercontent.com/ChrisMaunder/drawanimated/master/docs/assets/DrawAnimated_demo2.zip)
-
 ## Introduction
 
 If you look at MS Word and invoke the find dialog, you can see a neat animation. I wished to mimic this and came across the `DrawAnimatedRects()` function. The `DrawAnimatedRects()` function draws a wire-frame rectangle and animates it to indicate the opening of an icon, or the minimizing or maximizing of a window. The syntax is as follows:
@@ -74,7 +71,7 @@ That's it! A simple method but an effective one.
 
 * * *
 
-**Updated:** [Norm Almond](mailto:nalmond@hotmail.com) has supplied some code that produces the window exploding/imploding effect using a wire frame. The syntax for his function is as follows:
+**Updated:** Norm Almond has supplied some code that produces the window exploding/imploding effect using a wire frame. The syntax for his function is as follows:
 
 ```cpp
 void WINAPI DrawWireRects(LPRECT lprcFrom, LPRECT lprcTo, UINT nMilliSecSpeed)
@@ -160,7 +157,7 @@ void WINAPI DrawWireRects(LPRECT lprcFrom, LPRECT lprcTo, UINT nMilliSecSpeed)
 }
 ```
 
-[Demo project number 1](https://raw.githubusercontent.com/ChrisMaunder/drawanimated/master/docs/assets/DrawAnimated_demo1.zip) includes this new code. Norm has also produced a class that is part of [Demo project number 2](https://raw.githubusercontent.com/ChrisMaunder/drawanimated/master/docs/assets/DrawAnimated_demo2.zip) that demonstrates a class `CZoomRect` that can be used to implement his updated Zoom Rect code.
+Demo project number 1 includes this new code. Norm has also produced a class that is part of Demo project number that demonstrates a class `CZoomRect` that can be used to implement his updated Zoom Rect code.
 
 To use his class, include the *ZoomRect.h* header file, create a `CZoomRect` object and call its `Draw()` method:
 
